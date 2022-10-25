@@ -16,11 +16,11 @@ with con:
     cur.execute("CREATE TABLE IF NOT EXISTS person_pet (person_id INTEGER, pet_id INTEGER)")
     
 
-    for x in range(len(data['people'])):
-        cur.execute("INSERT INTO person (first_name, last_name, age) VALUES (?,?,?)", data['people'][x])
+    for x in range(len(data['persons'])):
+        cur.execute("INSERT INTO person (first_name, last_name, age) VALUES (?,?,?)", data['persons'][x])
     
     for y in range(len(data['pets'])):
-        cur.execute("INSERT INTO pets (name, breed, age, dead) VALUES (?,?,?,?)", data['pets'][y])
+        cur.execute("INSERT INTO pet (name, breed, age, dead) VALUES (?,?,?,?)", data['pets'][y])
 
     for z in range(len(data['person pet'])):
         cur.execute("INSERT INTO person_pet VALUES (?,?)", data['person pet'][z])
