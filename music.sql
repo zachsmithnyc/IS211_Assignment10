@@ -12,7 +12,7 @@ CREATE TABLE albums (
 );
 
 CREATE TABLE songs(
-    id INTEGER PRIMARY KEY ASC<
+    id INTEGER PRIMARY KEY ASC,
     song_title TEXT,
     album_title TEXT,
     track_no INTEGER,
