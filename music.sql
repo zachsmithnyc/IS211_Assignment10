@@ -1,5 +1,3 @@
-CREATE SCHEMA IF NOT EXISTS music;
-
 CREATE TABLE artists (
     id INTEGER PRIMARY KEY ASC,
     artist_name TEXT
